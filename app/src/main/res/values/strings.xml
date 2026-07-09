@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Balance Tracker</string>
+    <string name="widget_description">Shows your running balance. Tap to add a credit or debit.</string>
+</resources>
