@@ -56,12 +56,11 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Debited ${format(amount)}", Toast.LENGTH_SHORT).show()
         }
 
-        amountInput.text.clear()
-        noteInput.text.clear()
-
         // Push the update to the home-screen widget immediately
         BalanceWidgetProvider.refreshAll(this)
-        refreshBalanceDisplay()
+
+        // Close the popup automatically, like a dialog
+        finish()
     }
 
     private fun refreshBalanceDisplay() {
